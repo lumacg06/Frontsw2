@@ -53,7 +53,7 @@ Sugerir mejoras: Si tienes sugerencias para mejorar el proyecto no dudes en expr
 Documentación: Si eres bueno con la documentacion y deseas mejorarla tu contribucion sera muy valiosa.
 Ayuda con el diseño: Si tienes habilidades de diseño y quieres mejorar la interfaz de usuario del proyecto, tu ayuda será bien recibida.
 
-####Contacto
+#### Contacto
 
 Si tienes preguntas acerca del proyecto no dudes en contactarme.
 Correo Electronico: luisachavarria06@gmail.com
