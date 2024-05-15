@@ -1,6 +1,6 @@
 #Proyecto Frontsw2
 
-¡Bienvenido a mi Proyecto Frontsw2! Este es un repositorio en el que encontraras un maravilloso proyecto realizado con el deseo de afrontar nuevos retos y sobre todo y mas importante aprender, avanzar y adquirir nuevas habilidades, entender como funciona el mundo laboral y comprender que es un reto que vale la pena afrontar.
+¡Bienvenido a mi **Proyecto Frontsw2!** Este es un repositorio en el que encontraras un maravilloso proyecto realizado con el deseo de afrontar nuevos retos y sobre todo y mas importante aprender, avanzar y adquirir nuevas habilidades, entender como funciona el mundo laboral y comprender que es un reto que vale la pena afrontar.
 
 ##Descripción 
 
@@ -12,22 +12,22 @@ Actualmente el proyecto se encuentra en desarrollo, aun faltan detalles por comp
 
 ###Requisitos del entorno
 
-Para trabajar en el proyecto Frontsw2 requieres tener instalado en tu equipo Visual Studio Code.
-En tu Visual Studio Code, deberas descargar la extensión de Spring Boot Extensión Pack para trabajar con el entorno de Spring Boot.
-Para completar tu area de trabajo instala en Visual Studio Code la extensión Thunder Client.
-Deberas tener una base de datos como MySQL, en este caso se ha utilizado MySQL Workbench.
-Debes  buscar en tu navegador favorito, Vite para buscar los comandos esenciales para trabajar con react, requieres abrir una terminal y empezar a ejecutar los comandos proporcionados por Vite para crear tu proyecto si así lo deseas.
-Deberás instalar node js para la ejecución de tu código JavaScript.
+- Para trabajar en el proyecto Frontsw2 requieres tener instalado en tu equipo Visual Studio Code.
+- En tu Visual Studio Code, deberas descargar la extensión de Spring Boot Extensión Pack para trabajar con el entorno de Spring Boot.
+- Para completar tu area de trabajo instala en Visual Studio Code la extensión Thunder Client.
+- Deberas tener una base de datos como MySQL, en este caso se ha utilizado MySQL Workbench.
+- Debes  buscar en tu navegador favorito, Vite para buscar los comandos esenciales para trabajar con react, requieres abrir una terminal y empezar a ejecutar los comandos proporcionados por Vite para crear tu proyecto si así lo deseas.
+- Deberás instalar node js para la ejecución de tu código JavaScript.
 
 ###Instalación y funcionamiento 
 
 Para comenzar a trabajar con Proyecto  Frontsw2, sigue estos pasos:
 
-Clona el repositorio Frontsw2 y backends2
-Navega en las carpeta de ambos proyectos
-Instala las dependencias necesarias.
-Abre http://localhost:8080/api/registrob/ en tu navegador para ver el proyecto backendsw2 en funcionamiento, revisa la conexión con la base de datos crea tus registros y ejecuta el proyecto. 
-Después de haber abierto tu proyecto backendsw2 ejecutarlo y dejarlo funcionando deberás ejecutar tu proyecto Frontsw2 e ir al puerto de navegación http://localhost:5173/ para ver el front de tus registros con las opciones de editar un registro, eliminar y crear nuevos registros y donde podrás visualizar una interfaz para tus registros creados.
+- Clona el repositorio Frontsw2 y backends2
+- Navega en las carpeta de ambos proyectos
+- Instala las dependencias necesarias.
+- Abre http://localhost:8080/api/registrob/ en tu navegador para ver el proyecto backendsw2 en funcionamiento, revisa la conexión con la base de datos crea tus registros y ejecuta el proyecto. 
+- Después de haber abierto tu proyecto backendsw2 ejecutarlo y dejarlo funcionando deberás ejecutar tu proyecto Frontsw2 e ir al puerto de navegación http://localhost:5173/ para ver el front de tus registros con las opciones de editar un registro, eliminar y crear nuevos registros y donde podrás visualizar una interfaz para tus registros creados.
 
 ####Bugs conocidos y soluciones
 
@@ -36,13 +36,13 @@ Estos errores fueron solucionados corrigiendo las importaciones, y arreglando al
 
 ####Tecnologías utilizadas
 
-Visual Studio Code.
-Extension Spring boot.
-Extension Thunder Client.
-Extension Java.
-My MySQL Workbench.
-Extension Blackbox
-Node js
+1. Visual Studio Code.
+2. Extension Spring boot.
+3. Extension Thunder Client.
+4. Extension Java.
+5. My MySQL Workbench.
+6. Extension Blackbox
+7. Node js
 
 ####Contribuciones
 
@@ -62,5 +62,5 @@ Correo Electronico: luisachavarria06@gmail.com
 
 Quiero expresar mi más sincero agradecimiento a:
 
-Daniel Agudelo Molina, por sus valiosas contribuciones por aportarle tanto a mi proceso educativo Universitario por medio de este proyecto. 
+**Daniel Agudelo Molina**, por sus valiosas contribuciones por aportarle tanto a mi proceso educativo Universitario por medio de este proyecto. 
 
