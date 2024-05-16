@@ -1,51 +1,86 @@
-import { useState } from "react"
+import { useState, useEffect } from 'react';
 
-function RegistrosForm({onSubmit}) {
-    const [tipocafe, setTipocafe] = useState('')
-    const [tiempogerminacion, setTiempogerminacion] = useState('')
-    const [tiemposiembra, setTiemposiembra] = useState('')
-    const [tiempofruto, setTiempofruto] = useState('')
-    const [aniosproducion, setAniosproducion] = useState('')
+function RegistrosForm({ onSubmit, onCancelEdit, editingRegistro }) {
+  const [registro, setRegistro] = useState({
+    idregistro: null,
+    tipocafe: '',
+    tiempogerminacion: '',
+    tiemposiembra: '',
+    tiempofruto: '',
+    aniosproducion: '',
+  });
 
-    const handleTipocafeChange = (event) => {
-        setTipocafe(event.target.value)
+  useEffect(() => {
+    if (editingRegistro) {
+      const { idregistro, ...rest } = editingRegistro;
+      setRegistro({ idregistro, ...rest });
     }
-    const handleTiempogerminacionChange = (event) => {
-        setTiempogerminacion(event.target.value)
-    }
-    const handleTiemposiembraChange = (event) => {
-        setTiemposiembra(event.target.value)
-    }
-    const handleTiempofrutoChange = (event) => {
-        setTiempofruto(event.target.value)
-    }
-    const handleAniosproducionChange = (event) => {
-        setAniosproducion(event.target.value)
-    }
+  }, [editingRegistro]);
 
-    //Creacion de la funcion que va a enviar el formulario a la base de datos...
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setRegistro({ ...registro, [name]: value });
+  };
 
-    const handleSubmit = (event) => {
-        event.preventDefault()
-        onSubmit({ tipocafe, tiempogerminacion, tiemposiembra, tiempofruto, aniosproducion })
-        setTipocafe('')
-        setTiempogerminacion('')
-        setTiemposiembra('')
-        setTiempofruto('')
-        setAniosproducion('')
-    }
-    return (
-        <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="Tipo cafe" value={tipocafe} onChange={handleTipocafeChange} required />
-            <input type="text" placeholder="Tiempo germinacion" value={tiempogerminacion} onChange={handleTiempogerminacionChange} required />
-            <input type="text" placeholder="Tiempo siembra " value={tiemposiembra} onChange={handleTiemposiembraChange} required />
-            <input type="text" placeholder="Tiempo fruto " value={tiempofruto} onChange={handleTiempofrutoChange} required />
-            <input type="text" placeholder="Años produccion " value={aniosproducion} onChange={handleAniosproducionChange} required />
-            <button type="submit"> Guardar</button>
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onSubmit(registro);
+    setRegistro({
+      idregistro: null,
+      tipocafe: '',
+      tiempogerminacion: '',
+      tiemposiembra: '',
+      tiempofruto: '',
+      aniosproducion: '',
+    });
+  };
 
-        </form>
-    )
-
+  return (
+    <form onSubmit={handleSubmit}>
+      <input
+        type="text"
+        name="tipocafe"
+        placeholder="Tipo de café"
+        value={registro.tipocafe}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="text"
+        name="tiempogerminacion"
+        placeholder="Tiempo de germinación"
+        value={registro.tiempogerminacion}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="text"
+        name="tiemposiembra"
+        placeholder="Tiempo de siembra"
+        value={registro.tiemposiembra}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="text"
+        name="tiempofruto"
+        placeholder="Tiempo de fruto"
+        value={registro.tiempofruto}
+        onChange={handleChange}
+        required
+      />
+      <input
+        type="text"
+        name="aniosproducion"
+        placeholder="Años de producción"
+        value={registro.aniosproducion}
+        onChange={handleChange}
+        required
+      />
+      <button type="submit">{editingRegistro ? 'Guardar cambios' : 'Agregar'}</button>
+      {editingRegistro && <button type="button" onClick={onCancelEdit}>Cancelar edición</button>}
+    </form>
+  );
 }
 
-export default RegistrosForm
+export default RegistrosForm;

@@ -1,39 +1,32 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+// RegistrosTable.jsx
+
 import RegistrosRow from './RegistrosRow';
 
-const RegistrosTable = (props) => {
-  const { registros } = props;
-
+const RegistrosTable = ({ registros, onEdit, onDelete }) => {
   return (
     <table>
       <thead>
         <tr>
-          <th>Tipo Cafe</th>
-          <th>Tiempo Germinacion </th>
-          <th>Tiempo Siembra </th>
-          <th>Tiempo Fruto </th>
-          <th>Años Produccion </th>
+          <th>Tipo de Café</th>
+          <th>Tiempo de Germinación</th>
+          <th>Tiempo de Siembra</th>
+          <th>Tiempo de Fruto</th>
+          <th>Años de Producción</th>
+          <th>Acciones</th>
         </tr>
       </thead>
       <tbody>
-        {registros.map((registro) => (
-          <RegistrosRow key={registro.id} registro={registro} />
+        {registros.map(registro => (
+          <RegistrosRow
+            key={registro.idregistro}
+            registro={registro}
+            onEdit={onEdit}
+            onDelete={onDelete}
+          />
         ))}
       </tbody>
     </table>
   );
-};
-
-RegistrosTable.propTypes = {
-  registros: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.number.isRequired,
-    tipoCafe: PropTypes.string.isRequired,
-    tiempoGerminacion: PropTypes.number.isRequired,
-    tiempoSiembra: PropTypes.number.isRequired,
-    tiempoFruto: PropTypes.number.isRequired,
-    añosProduccion: PropTypes.number.isRequired,
-  })).isRequired,
 };
 
 export default RegistrosTable;
