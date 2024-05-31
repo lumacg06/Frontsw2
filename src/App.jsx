@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import RegistrosTable from './components/RegistrosTable';
 import RegistrosForm from './components/RegistrosForm';
+import Register from '../componentsRecord/Register';
 
 const App = () => {
   const [registros, setRegistros] = useState([]);
@@ -53,6 +54,7 @@ const App = () => {
 
   return (
     <div>
+      <Register/>
       <h1>Registros de Café</h1>
       <RegistrosTable
         registros={registros}

@@ -4,11 +4,11 @@
 
 ## Descripción 
 
-Crear una interfaz de usuario intuitiva y eficiente que permita a los usuarios rurales registrar y monitorear el tipo de café producido en cada finca, así como evaluar su calidad.
+Con la creacion del proyecto **Frontsw2** se busca crear una interfaz de usuario intuitiva y eficiente que permita a los usuarios rurales registrar y monitorear el tipo de café producido en cada finca, así como evaluar su calidad y conocer con mayor facilidad el café que mas produce.
 
 ### Estado del proyecto
 
-Actualmente el proyecto se encuentra en desarrollo, aun faltan detalles por complementar y refinar.
+Actualmente el proyecto se encuentra terminado, se logró cada uno de los objetivos los cuales eran realizar un proyecto pequeño pero bien desarrollado.
 
 ### Requisitos del entorno
 
@@ -26,8 +26,8 @@ Para comenzar a trabajar con Proyecto  Frontsw2, sigue estos pasos:
 - Clona el repositorio Frontsw2 y backends2
 - Navega en las carpeta de ambos proyectos
 - Instala las dependencias necesarias.
-- Abre http://localhost:8080/api/registrob/ en tu navegador para ver el proyecto backendsw2 en funcionamiento, revisa la conexión con la base de datos crea tus registros y ejecuta el proyecto. 
-- Después de haber abierto tu proyecto backendsw2 ejecutarlo y dejarlo funcionando deberás ejecutar tu proyecto Frontsw2 e ir al puerto de navegación http://localhost:5173/ para ver el front de tus registros con las opciones de editar un registro, eliminar y crear nuevos registros y donde podrás visualizar una interfaz para tus registros creados.
+- Abre http://localhost:8080/api/registrob/ en tu navegador para ver el proyecto Backendsw2 en funcionamiento, revisa la conexión con la base de datos crea tus registros y ejecuta el proyecto. 
+- Después de haber abierto tu proyecto backendsw2 ejecutarlo y dejarlo funcionando deberás ejecutar tu proyecto Frontsw2 e ir al puerto de navegación http://localhost:5173/ para ver el front de tus registros con las opciones de register, editar un registro, eliminar y crear nuevos registros y donde podrás visualizar una interfaz para tus registros creados.
 
 #### Bugs conocidos y soluciones
 
